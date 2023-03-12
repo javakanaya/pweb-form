@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <section class="forms-section">
+        <h1 class="section-title">Form</h1>
+        <div class="forms">
+            <div class="form-wrapper">
+                <button type="button" class="switcher switcher-login">
+                    Login
+                    <span class="underline"></span>
+                </button>
+                <form class="form form-login" onsubmit="submit_form()">
+                    <fieldset>
+                        <div class="input-block">
+                            <label for="e">E-mail</label>
+                            <input id="e" type="email" required>
+                        </div>
+                        <div class="input-block">
+                            <label for="p">Password</label>
+                            <input id="p" type="password" required>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="btn-login">Login</button>
+                </form>
+            </div>
+            <div class="form-wrapper is-active">
+                <button type="button" class="switcher switcher-signup">
+                    Sign Up
+                    <span class="underline"></span>
+                </button>
+                <form class="form form-signup">
+                    <fieldset>
+                        </legend>
+                        <div class="input-block">
+                            <label for="n1">Userame</label>
+                            <input type="text" required id="n1">
+                        </div>
+                        <div class="input-block">
+                            <label for="e1">E-mail</label>
+                            <input type="email" required id="e1">
+                        </div>
+                        <div class="input-block">
+                            <label for="p1">Password</label>
+                            <input type="password" required id="p1">
+                        </div>
+                        <div class="input-block">
+                            <label for="p2">Confirm Password</label>
+                            <input type="password" required id="p2">
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="btn-signup" onclick="create_account()">Create</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
